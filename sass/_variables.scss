@@ -1,0 +1,55 @@
+
+// ----------------------- MAIN COLORS ----------------------- //
+
+$black: #000;
+$white: #fff;
+
+$bg-color1: #ffffff;
+$bg-color2: #24373F;
+$bg-color3: #5A696F;
+$bg-color4: #EAEFF0;
+$bg-color5: #EAEFF0;
+
+
+
+$text-color1: #171717;
+$text-color2: rgb(36,55,63);
+$text-color3:#ffffff;
+
+$color1: #CBBDA7; 
+$color2: #E4EFD9;
+$color3: #99635E;
+$color4: #95AFB3;
+$color5: #23373F;
+$color6: #FFFFFF;
+
+$btn-color: #99635E;
+$btn-color-secondary: #95AFB3;
+$btn-color-outline: black;
+
+//these are set dynamic based on the contrast 
+$btn-text-light: #fff;
+$btn-text-dark: #000;
+
+$font1: "Poppins", sans-serif;
+$font2: "Bebas Neue", sans-serif;
+$font3: "Sacramento", cursive;
+
+
+$shadow1:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$header-height-mobile: 80px;
+
+// ----------------------- SIZES ----------------------- //
+
+$screen-xs-max: 576px;
+$screen-sm-max: 768px; 
+$screen-md-max: 992px;
+$screen-lg-max: 1199px;
+$screen-xl-max: 1340px;
+$screen-xxl-max: 1400px;
+
+// ----------------------- BOOTSTRAP  ----------------------- //
+
+$max-container-width: 1408px;
+$gutter: 13.5px;

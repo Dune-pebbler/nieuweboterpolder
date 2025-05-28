@@ -1,0 +1,72 @@
+.btn,
+.btn-primary{
+  display: inline-block;
+  padding: 0.9em 1.6em !important;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  background-color: $btn-color;
+  font-weight: 600;
+  color: get-contrast-color($btn-color);
+  font-size: 18px;
+  @media (max-width: $screen-md-max) {
+  }
+  &:hover {
+    background-color: darken($btn-color, 10%);
+    color: get-contrast-color($btn-color);
+  }
+  a {
+    color: get-contrast-color($btn-color) !important;
+  }
+}
+input[type="submit"] {
+  display: inline-block!important;
+  padding: 0.9em 1.6em !important;
+  border: 2px solid transparent!important;
+  cursor: pointer!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  transition: all 0.3s ease-in-out!important;
+  text-transform: uppercase!important;
+  background-color: $btn-color!important;
+  color: get-contrast-color($btn-color)!important;
+  font-size: 18px!important;
+  @media (max-width: $screen-md-max) {
+  }
+  &:hover {
+    background-color: darken($btn-color, 10%)!important;
+    color: get-contrast-color($btn-color)!important;
+  }
+  a {
+    color: get-contrast-color($btn-color) !important;
+  }
+
+}
+.owl-button {
+  cursor: pointer;
+  &:hover {
+    background-color: darken($btn-color, 10%) !important;
+  }
+}
+.btn-secondary {
+  @extend .btn;
+  background-color: $btn-color-secondary;
+  // color: get-contrast-color($btn-color-secondary);
+  color:white;
+  &:hover {
+    background-color: darken($btn-color-secondary, 10%);
+    color: get-contrast-color($btn-color-secondary);
+  }
+}
+.btn-outline {
+  @extend .btn;
+  background-color: transparent;
+  border: 2px solid $btn-color-outline;
+  color: $btn-color-outline;
+  &:hover {
+    background-color: $btn-color-outline;
+    color: get-contrast-color($btn-color-outline);
+  }
+}

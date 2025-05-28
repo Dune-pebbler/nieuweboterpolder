@@ -1,0 +1,12 @@
+.text-block {
+  p:first-child {
+    margin-bottom: 0;
+    line-height: 0;
+    em {
+      font-family: $font3;
+      font-size: 80px;
+      line-height: 80px;
+      color: $color1;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  .button {
+    background-color: $color1;
+    padding: 1em 1.2em;
+    margin: 2em;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.slide-description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 1em 2em;
+  background-color: $bg-color3;
+  color: white;
+  transform: translate(-50%);
+}
+
+//fit height
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.slide {
+  height: 100%;
+}

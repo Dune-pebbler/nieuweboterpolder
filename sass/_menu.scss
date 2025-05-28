@@ -1,0 +1,84 @@
+.menu-main-menu-container {
+  height: fit-content;
+}
+//submenu
+.menu-item-has-children {
+  position: relative;
+  > a {
+    &:after {
+      content: "\25BC";
+      display: inline-block;
+      margin-left: 12px;
+      font-size: 12px;
+      transform-origin: center;
+      vertical-align: middle; 
+      @media (max-width: $screen-lg-max) {
+        content: "";
+      }
+    }
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-left: 0;
+    background-color: $color5;
+    @media (max-width: $screen-lg-max) {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-left: 1em;
+      background-color: $color1;
+      display: block;
+    }
+  }
+  &:hover {
+    .sub-menu {
+      display: block;
+    }
+    > a {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 24px;
+  cursor: pointer;
+  margin: 1em;
+  @media (max-width: $screen-lg-max) {
+    display: flex;
+  }
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+  }
+  .bar:nth-child(2) {
+    width: 18px;
+    height: 4px;
+  }
+  .bar + .bar {
+    margin-top: 5px;
+  }
+  &.is-active {
+    .bar:first-child {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0; /* Hide the middle bar for the cross effect */
+    }
+
+    .bar:last-child {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
+}
