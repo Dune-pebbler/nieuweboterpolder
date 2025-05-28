@@ -21,7 +21,7 @@ jQuery(document).ready(function () {
   // responsiveLogoSwitch();
 });
 jQuery(window).scroll(function () {
-  hideOnScroll();
+  // hideOnScroll();
 });
 // jQuery(window).resize(function () {
 //   squareAspectRatio();
