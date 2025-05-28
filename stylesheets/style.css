@@ -1365,6 +1365,30 @@ footer .socials .icons .icon i {
   height: 100%;
 }
 
+.hero-slider {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.hero-slider .container {
+  max-width: 100%;
+  padding: 0;
+}
+.hero-slider .owl-carousel {
+  width: 100%;
+}
+.hero-slider .slide-item {
+  width: 100vw;
+  height: 100vh;
+}
+.hero-slider .slide-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
 .lightbox {
   display: none;
   position: fixed;
