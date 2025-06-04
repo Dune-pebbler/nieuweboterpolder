@@ -1,0 +1,39 @@
+footer {
+  background-color: $bg-color2;
+  padding: 6em 0 3em 0;
+  * {
+    color: white;
+  }
+  .socials {
+    margin-top: 3em;
+    .icons {
+      display: flex;
+      gap: 0.7em;
+      .icon {
+        border-radius: 80px;
+        background-color: white;
+        height: 48px;
+        width: 48px;
+        i {
+          color: $bg-color2;
+          font-size: 28px;
+        }
+        svg {
+          path {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}
+.disclaimer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: $color5;
+  padding: 8px 0;
+  * {
+    text-decoration: none;
+    color: white;
+  }
+}

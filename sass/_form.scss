@@ -1,0 +1,117 @@
+.form.subscribe {
+  h2.gform_title {
+    display: none;
+    display: none;
+  }
+  p {
+    margin-bottom: 3em;
+  }
+  #gform_fields_1 {
+    grid-row-gap: 2.5em;
+    margin-bottom: 2em;
+  }
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+  textarea,
+  select {
+    padding: 16px 8px !important;
+    border-radius: 0;
+    border: 0 transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: transparent !important;
+    display: block;
+    width: 100%;
+    color: $text-color2;
+    font-size: 20px;
+    background-color: $bg-color1;
+    @media (max-width: $screen-md-max) {
+      font-size: 16px !important;
+    }
+  }
+}
+
+form {
+  #gform_fields_2 {
+    grid-row-gap: 2.5em;
+    margin-bottom: 2em;
+  }
+  .gfield_consent_label {
+    white-space: wrap;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    transform: scale(1.2) !important;
+    border: 1px solid rgb(203, 203, 203) !important;
+    border-radius: 5px !important;
+  }
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+  textarea,
+  select {
+    padding: 26px 12px !important;
+    border-radius: 4px;
+    border: 1px solid rgb(203, 203, 203) !important;
+    background-color: $white;
+    display: block;
+    width: 100%;
+    color: rgb(152, 148, 148);
+    font-size: 20px;
+    background-color: $bg-color1;
+    @media (max-width: $screen-md-max) {
+      font-size: 16px !important;
+    }
+  }
+
+  .gform-field-label,
+  legend {
+    font-size: 20px !important;
+    @media (max-width: $screen-md-max) {
+      font-size: 16px !important;
+    }
+  }
+  .gform_required_legend {
+    display: none !important;
+  }
+  label {
+    font-size: 20px !important;
+    white-space: nowrap;
+    @media (max-width: $screen-md-max) {
+      font-size: 16px !important;
+    }
+  }
+  .gfield_radio {
+    display: flex;
+    gap: 16px;
+  }
+
+  .gfield_checkbox {
+    display: flex;
+    gap: 2em;
+  }
+
+  .gfield--type-html {
+    p {
+      margin-top: 0;
+    }
+  }
+  .gfield.gfield--width-quarter {
+    @media (max-width: $screen-lg-max) {
+      grid-column: span 6 !important;
+    }
+
+    @media (max-width: $screen-md-max) {
+      grid-column: span 12 !important;
+    }
+  }
+  p {
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 0px;
+    }
+  }
+  fieldset {
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 30px !important;
+    }
+  }
+  .form-example {
+    display: none;
+  }
+}
