@@ -40,7 +40,7 @@ function setOpenOverlay() {
   });
 
   // Prevent overlay from closing when clicking inner-container
-  jQuery(".inner-container").on("click", function (e) {
+  jQuery(".image-container").on("click", function (e) {
     e.stopPropagation();
   });
 }
