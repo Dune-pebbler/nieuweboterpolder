@@ -83,6 +83,9 @@ section.deco-img {
 }
 
 section.featured-residences {
+  .slide-item {
+    height: 100%;
+  }
   .content-group {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 100%;
