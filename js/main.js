@@ -33,9 +33,15 @@ function setOpenOverlay() {
     e.preventDefault();
     jQuery(this).find(".overlay").fadeIn();
   });
+
   jQuery(".overlay").on("click", function (e) {
     e.stopPropagation();
     jQuery(this).fadeOut();
+  });
+
+  // Prevent overlay from closing when clicking inner-container
+  jQuery(".inner-container").on("click", function (e) {
+    e.stopPropagation();
   });
 }
 

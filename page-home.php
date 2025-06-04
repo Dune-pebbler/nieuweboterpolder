@@ -305,25 +305,23 @@ get_header();
                                             <h3 class="subtitle"><?= get_field('woning_subtitel') ?></h3>
                                             <span class="btn-secondary read-more">Bekijken</span>
                                         </div>
-                                        
+
                                         <div class="overlay">
                                             <div class="inner-container relative">
                                                 <i class="fa-solid fa-xmark"></i>
                                                 <div class="text-container">
                                                     <div class="image-container relative">
-                                                        <div class="inner-img-container">
-                                                            <?php if ($gallery = get_field('woning_gallery')): ?>
-                                                                <div class="owl-carousel" style="width: 100%; height: 100%;">
-                                                                    <?php foreach ($gallery as $image): ?>
-                                                                        <div class="slide-item">
-                                                                            <img class="contain" style="height: 100%;"
-                                                                                src="<?php echo esc_url($image['url']); ?>"
-                                                                                alt="<?php echo esc_attr($image['alt']); ?>" />
-                                                                        </div>
-                                                                    <?php endforeach; ?>
-                                                                </div>
-                                                            <?php endif; ?>
-                                                        </div>
+                                                        <?php if ($gallery = get_field('woning_gallery')): ?>
+                                                            <div class="owl-carousel" style="width: 100%; height: 100%;">
+                                                                <?php foreach ($gallery as $image): ?>
+                                                                    <div class="slide-item">
+                                                                        <img class="contain" style="height: 100%;"
+                                                                            src="<?php echo esc_url($image['url']); ?>"
+                                                                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                    </div>
+                                                                <?php endforeach; ?>
+                                                            </div>
+                                                        <?php endif; ?>
                                                     </div>
                                                     <div class="grouper">
                                                         <h2 class="title"><?= get_the_title(); ?></h2>
