@@ -1239,10 +1239,21 @@ section.form p {
 
 section.downloads {
   padding-bottom: 50px;
+  /* Mobile */
 }
 section.downloads .downloads-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 992px) {
+  section.downloads .downloads-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  section.downloads .downloads-container {
+    grid-template-columns: 1fr;
+  }
 }
 section.downloads .downloads__title {
   color: #99635E;

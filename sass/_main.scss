@@ -374,7 +374,19 @@ section.downloads {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .downloads__title{
+  @media (max-width: 992px) {
+    .downloads-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .downloads-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .downloads__title {
     color: $color3;
   }
   a {
