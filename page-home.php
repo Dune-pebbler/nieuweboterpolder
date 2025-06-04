@@ -314,7 +314,7 @@ get_header();
                                                         <?php if ($gallery = get_field('woning_gallery')): ?>
                                                             <div class="owl-carousel" style="width: 100%; height: 100%;">
                                                                 <?php foreach ($gallery as $image): ?>
-                                                                    <div class="slide-item">
+                                                                    <div class="slide-item" style="height:100%">
                                                                         <img class="contain" style="height: 100%;"
                                                                             src="<?php echo esc_url($image['url']); ?>"
                                                                             alt="<?php echo esc_attr($image['alt']); ?>" />
