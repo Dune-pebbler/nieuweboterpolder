@@ -305,6 +305,7 @@ get_header();
                                             <h3 class="subtitle"><?= get_field('woning_subtitel') ?></h3>
                                             <span class="btn-secondary read-more">Bekijken</span>
                                         </div>
+                                        
                                         <div class="overlay">
                                             <div class="inner-container relative">
                                                 <i class="fa-solid fa-xmark"></i>
